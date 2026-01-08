@@ -78,53 +78,28 @@
         .download:hover {
             filter: brightness(1.04);
         }
-        ul {
-            padding-left: 18px;
-        }
-        li {
-            margin: 4px 0;
-        }
-        .note {
-            font-size: 0.9rem;
-            color: #d6c7a5;
-        }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>The Bard's Bytecode</h1>
         <div class="subtitle">
-            A Shakespeare Programming Language challenge for LNMIIT CTF.
+            An LNMIIT web challenge in three acts.
         </div>
 
         <div class="box">
-            <p><strong>Story.</strong> Somewhere between old plays and new compilers, a bored engineer decided to hide a flag inside a Shakespeare play that computers can run. The result is a script where characters shout insults, compare each other to pigs and cats, and occasionally <em>speak their mind</em> as numbers.</p>
-            <p>Your task is simple: stage the play correctly, and listen when the right character finally speaks. Their words, taken together, form a flag in the format <code>LNM{...}</code>.</p>
+            <p>Somewhere between candlelight and command line, a play was written that a compiler can understand. Its characters are variables, its insults are arithmetic, and when the time is right a single line will be spoken that does not belong on any stage.</p>
+            <p>That line is the only thing that matters. Everything else is theatre.</p>
         </div>
 
         <h2>Files</h2>
-        <p>
-            Download the Shakespeare Program:
-        </p>
+        <p>Script:</p>
         <p>
             <a href="bard.spl" class="download">Download <code>bard.spl</code></a>
         </p>
 
-        <h2>What you need</h2>
-        <ul>
-            <li>A way to run the Shakespeare Programming Language (SPL) – for example, one of the translators linked in public SPL resources.</li>
-            <li>Basic understanding that SPL uses characters as integer variables and phrases like <code>speak your mind</code> to output ASCII.</li>
-        </ul>
-
-        <h2>Goal</h2>
-        <p>
-            Run <code>bard.spl</code> with an SPL translator and capture its output.  
-            The output string will be your flag, in the form <code>LNM{...}</code>.
-        </p>
-
-        <p class="note">
-            Hint for organizers only: the script encodes the flag using integer arithmetic on characters, then reveals it via <code>speak your mind</code>, similar to examples in Shakespeare Programming Language demos.[page:1]
-        </p>
+        <h2>Flag Format</h2>
+        <p>The flag is in the form <code>LNM{...}</code>.</p>
     </div>
 </body>
 </html>
