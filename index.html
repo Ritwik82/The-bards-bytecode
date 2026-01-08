@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>The Bard's Bytecode – LNMIIT CTF</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        :root {
+            --parchment: #f2e5cf;
+            --ink: #181313;
+            --deep-red: #6f1b20;
+            --border: #b58a3a;
+        }
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: "Georgia", serif;
+            background: radial-gradient(circle at top, #3b2520 0%, #130f10 55%, #060506 100%);
+            color: var(--parchment);
+        }
+        .container {
+            max-width: 840px;
+            margin: 0 auto;
+            background: rgba(16, 12, 10, 0.96);
+            border-radius: 12px;
+            border: 1px solid rgba(181, 138, 58, 0.55);
+            padding: 28px 22px 26px;
+            box-shadow:
+                0 0 24px rgba(0, 0, 0, 0.85),
+                0 0 40px rgba(0, 0, 0, 0.7);
+        }
+        h1 {
+            text-align: center;
+            margin: 0 0 8px;
+            font-size: 2.2rem;
+            color: #f5e0b0;
+        }
+        .subtitle {
+            text-align: center;
+            font-style: italic;
+            font-size: 0.97rem;
+            color: #dfcfad;
+            margin-bottom: 24px;
+        }
+        .box {
+            border-left: 4px solid var(--border);
+            padding: 12px 16px 14px;
+            margin-bottom: 22px;
+            background: radial-gradient(circle at left, rgba(242, 229, 207, 0.1), transparent 60%);
+        }
+        h2 {
+            margin-top: 18px;
+            font-size: 1.25rem;
+            color: #f2ddb0;
+        }
+        p {
+            line-height: 1.7;
+            margin: 6px 0 10px;
+        }
+        code {
+            background: rgba(0, 0, 0, 0.4);
+            padding: 2px 4px;
+            border-radius: 3px;
+            font-family: "Courier New", monospace;
+            font-size: 0.9rem;
+        }
+        .download {
+            display: inline-block;
+            margin: 10px 0;
+            padding: 8px 16px;
+            background: linear-gradient(135deg, var(--deep-red), #8a3533);
+            color: #fdf5e6;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 0.96rem;
+            border: 1px solid #000;
+        }
+        .download:hover {
+            filter: brightness(1.04);
+        }
+        ul {
+            padding-left: 18px;
+        }
+        li {
+            margin: 4px 0;
+        }
+        .note {
+            font-size: 0.9rem;
+            color: #d6c7a5;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>The Bard's Bytecode</h1>
+        <div class="subtitle">
+            A Shakespeare Programming Language challenge for LNMIIT CTF.
+        </div>
+
+        <div class="box">
+            <p><strong>Story.</strong> Somewhere between old plays and new compilers, a bored engineer decided to hide a flag inside a Shakespeare play that computers can run. The result is a script where characters shout insults, compare each other to pigs and cats, and occasionally <em>speak their mind</em> as numbers.</p>
+            <p>Your task is simple: stage the play correctly, and listen when the right character finally speaks. Their words, taken together, form a flag in the format <code>LNM{...}</code>.</p>
+        </div>
+
+        <h2>Files</h2>
+        <p>
+            Download the Shakespeare Program:
+        </p>
+        <p>
+            <a href="bard.spl" class="download">Download <code>bard.spl</code></a>
+        </p>
+
+        <h2>What you need</h2>
+        <ul>
+            <li>A way to run the Shakespeare Programming Language (SPL) – for example, one of the translators linked in public SPL resources.</li>
+            <li>Basic understanding that SPL uses characters as integer variables and phrases like <code>speak your mind</code> to output ASCII.</li>
+        </ul>
+
+        <h2>Goal</h2>
+        <p>
+            Run <code>bard.spl</code> with an SPL translator and capture its output.  
+            The output string will be your flag, in the form <code>LNM{...}</code>.
+        </p>
+
+        <p class="note">
+            Hint for organizers only: the script encodes the flag using integer arithmetic on characters, then reveals it via <code>speak your mind</code>, similar to examples in Shakespeare Programming Language demos.[page:1]
+        </p>
+    </div>
+</body>
+</html>

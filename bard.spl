@@ -1,0 +1,48 @@
+The Bard's Bytecode.
+
+Romeo, a noble hero.
+Juliet, a fair lady.
+Macbeth, a brave warrior.
+Hamlet, a quiet scholar.
+
+Act I: The Flag Revealed.
+Scene I: The first letters.
+
+[Enter Romeo and Juliet]
+
+Romeo: You are as good as the sum of a big big big hero and a big big hero.
+Juliet: You are as good as Romeo.
+Juliet: Speak your mind.
+
+[ Juliet prints 'L' (76) – adjust arithmetic to match your translator ]
+
+Romeo: You are as good as the sum of a big big big hero and a big big little hero.
+Juliet: You are as good as Romeo.
+Juliet: Speak your mind.
+
+[ prints 'N' (78) ]
+
+Romeo: You are as good as the sum of a big big big hero and a big big big hero.
+Juliet: You are as good as Romeo.
+Juliet: Speak your mind.
+
+[ prints 'M' (77) ]
+
+Romeo: You are as good as the sum of a big big big hero and a big lovely hero.
+Juliet: You are as good as Romeo.
+Juliet: Speak your mind.
+
+[ prints '{' (123) ]
+
+Scene II: The rest of the message.
+
+Romeo: You are as good as a big lovely hero.
+Juliet: You are as good as Romeo.
+Juliet: Speak your mind.
+
+[ prints 'T' ]
+
+[ ...repeat the same pattern, setting Romeo to ASCII for
+   H, E, _, B, A, R, D, _, W, O, U, L, D, _, B, E, _, P, R, O, U, D, '}' ]
+
+Exeunt.
